@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="VideoPoker">
+</Property><Property Name="Solution File" Value="C:\VideoPoker\VideoPoker.sln">
+</Property><Property Name="Date" Value="mercredi 21 avril 2010">
+</Property><Property Name="Time" Value="02:26">
+</Property></Properties><Event ErrorLevel="0" Project="VideoPoker" Source="VideoPoker.vcproj" Description="Converting project file 'C:\VideoPoker\VideoPoker.vcproj'.">
+</Event><Event ErrorLevel="1" Project="VideoPoker" Source="VideoPoker.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="VideoPoker" Source="VideoPoker.vcproj" Description="Done converting to new project file 'C:\VideoPoker\VideoPoker.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="VideoPoker" Source="VideoPoker.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="VideoPoker.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="VideoPoker.sln" Description="Converted">
+</Event></UpgradeLog>

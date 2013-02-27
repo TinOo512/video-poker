@@ -1,0 +1,45 @@
+gtk-theme-name="Aero-ion3.1"
+
+pixmap_path "./Images"
+
+#style "BG_Table"
+#{
+#   engine "pixmap"
+#   {
+#        image
+#        {
+#        	function = FLAT_BOX
+#            file = "Table.png"
+#        }
+#   }
+#}
+
+#widget "GtkWindow" style "BG_Table"
+
+
+################### TEXT DEFAULT ##########################
+
+style "user-font"
+{
+	font_name="Segoe UI Bold 10"
+	
+	# Normal base color
+  #bg[NORMAL]  = "#6a6a6a"
+  
+  # Unfocused title background color
+  bg[INSENSITIVE]  = { 0.8, 0.8, 0.8 }
+  
+	# Unfocused title text color
+  fg[INSENSITIVE]  = "#ffcb2c"
+  
+  # Focused icon color
+  fg[NORMAL]  = "#ffcb2c"
+  
+  # Focused title background color
+  bg[SELECTED]  = "#ffcb2c"
+	
+	  # Focused title text color
+  fg[SELECTED]  = "#5d2258"
+}
+
+widget_class "*" style "user-font"

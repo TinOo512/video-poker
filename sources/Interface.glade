@@ -1,0 +1,1110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="2.20"/>
+  <!-- interface-naming-policy project-wide -->
+  <object class="GtkWindow" id="window">
+    <property name="title" translatable="yes">Video Poker</property>
+    <property name="window_position">center</property>
+    <property name="default_width">800</property>
+    <property name="default_height">600</property>
+    <signal name="size-allocate" handler="on_window_size_allocate" swapped="no"/>
+    <signal name="delete-event" handler="on_window_delete" swapped="no"/>
+    <child>
+      <object class="GtkVBox" id="vbox">
+        <child>
+          <object class="GtkVBox" id="boxMenu">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkVBox" id="vboxMenu">
+                <property name="visible">True</property>
+                <child>
+                  <object class="GtkAlignment" id="alignMenu">
+                    <property name="visible">True</property>
+                    <property name="yalign">0.60000002384185791</property>
+                    <property name="xscale">0</property>
+                    <property name="yscale">0</property>
+                    <child>
+                      <object class="GtkVBox" id="vboxBtnMenu">
+                        <property name="visible">True</property>
+                        <property name="spacing">10</property>
+                        <property name="homogeneous">True</property>
+                        <child>
+                          <object class="GtkEventBox" id="eventbtnM1">
+                            <property name="visible">True</property>
+                            <property name="visible_window">False</property>
+                            <signal name="button-press-event" handler="onClick_Jouer" swapped="no"/>
+                            <child>
+                              <object class="GtkImage" id="imgM1">
+                                <property name="visible">True</property>
+                                <property name="pixbuf">./Images/Jouer.png</property>
+                              </object>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEventBox" id="eventbtnM2">
+                            <property name="visible">True</property>
+                            <property name="visible_window">False</property>
+                            <signal name="button-press-event" handler="onClick_Aide" swapped="no"/>
+                            <child>
+                              <object class="GtkImage" id="imgM2">
+                                <property name="visible">True</property>
+                                <property name="pixbuf">./Images/Aide.png</property>
+                              </object>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEventBox" id="eventbtnM3">
+                            <property name="visible">True</property>
+                            <property name="visible_window">False</property>
+                            <signal name="button-press-event" handler="onClick_Credits" swapped="no"/>
+                            <child>
+                              <object class="GtkImage" id="imgM3">
+                                <property name="visible">True</property>
+                                <property name="pixbuf">./Images/Credits.png</property>
+                              </object>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="position">2</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkAlignment" id="alignSpace">
+                            <property name="visible">True</property>
+                            <child>
+                              <placeholder/>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="position">3</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEventBox" id="eventbtnM4">
+                            <property name="no_show_all">True</property>
+                            <property name="visible_window">False</property>
+                            <signal name="button-press-event" handler="onClick_Retour" swapped="no"/>
+                            <child>
+                              <object class="GtkImage" id="imgM4">
+                                <property name="visible">True</property>
+                                <property name="pixbuf">./Images/Retour.png</property>
+                              </object>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="position">4</property>
+                          </packing>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkVBox" id="vboxRegles">
+                <property name="no_show_all">True</property>
+                <child>
+                  <object class="GtkAlignment" id="alignReglesTop">
+                    <property name="visible">True</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkAlignment" id="alignRegles">
+                    <property name="visible">True</property>
+                    <property name="xscale">0</property>
+                    <property name="yscale">0</property>
+                    <child>
+                      <object class="GtkVBox" id="vboxBtnRegles">
+                        <property name="visible">True</property>
+                        <property name="spacing">10</property>
+                        <child>
+                          <object class="GtkLabel" id="labelReglesError">
+                            <property name="no_show_all">True</property>
+                            <property name="label" translatable="yes">Veuillez entrer un nombre entre 1 et 9999</property>
+                            <attributes>
+                              <attribute name="weight" value="bold"/>
+                              <attribute name="foreground" value="#ffff00000000"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="labelReglesNbJ">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Nombres de jetons : </property>
+                            <attributes>
+                              <attribute name="foreground" value="#ffffffffffff"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry" id="entryReglesNbJ">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="max_length">4</property>
+                            <property name="invisible_char">●</property>
+                            <property name="text" translatable="yes">1000</property>
+                            <property name="invisible_char_set">True</property>
+                          </object>
+                          <packing>
+                            <property name="position">2</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkLabel" id="labelReglesNbP">
+                            <property name="visible">True</property>
+                            <property name="label" translatable="yes">Nombres de parties (-1 = illimité) : </property>
+                            <attributes>
+                              <attribute name="foreground" value="#ffffffffffff"/>
+                            </attributes>
+                          </object>
+                          <packing>
+                            <property name="position">3</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkEntry" id="entryReglesNbP">
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="max_length">4</property>
+                            <property name="invisible_char">●</property>
+                            <property name="text" translatable="yes">-1</property>
+                            <property name="invisible_char_set">True</property>
+                          </object>
+                          <packing>
+                            <property name="position">4</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkHButtonBox" id="hbtnRegles">
+                            <property name="visible">True</property>
+                            <property name="layout_style">spread</property>
+                            <child>
+                              <object class="GtkButton" id="btnReglesAnnuler">
+                                <property name="label">Annuler</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="receives_default">True</property>
+                                <signal name="clicked" handler="on_buttonAnnuler_clicked" swapped="no"/>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">False</property>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkButton" id="btnReglesValider">
+                                <property name="label">Valider</property>
+                                <property name="visible">True</property>
+                                <property name="can_focus">True</property>
+                                <property name="receives_default">True</property>
+                                <signal name="clicked" handler="on_buttonValider_clicked" swapped="no"/>
+                              </object>
+                              <packing>
+                                <property name="expand">False</property>
+                                <property name="fill">False</property>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                          </object>
+                          <packing>
+                            <property name="position">5</property>
+                          </packing>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkAlignment" id="alignReglesBottom">
+                    <property name="visible">True</property>
+                    <child>
+                      <placeholder/>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkVBox" id="vboxResult">
+                <property name="no_show_all">True</property>
+                <child>
+                  <object class="GtkAlignment" id="alignResult">
+                    <property name="visible">True</property>
+                    <property name="yalign">1</property>
+                    <property name="xscale">0.30000001192092896</property>
+                    <property name="yscale">0.40000000596046448</property>
+                    <child>
+                      <object class="GtkHButtonBox" id="hbtnResult">
+                        <property name="visible">True</property>
+                        <property name="layout_style">spread</property>
+                        <child>
+                          <object class="GtkButton" id="btnQuit">
+                            <property name="label" translatable="yes">Quitter</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="receives_default">True</property>
+                            <signal name="clicked" handler="gtk_main_quit" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">False</property>
+                            <property name="position">0</property>
+                          </packing>
+                        </child>
+                        <child>
+                          <object class="GtkButton" id="btnRejouer">
+                            <property name="label" translatable="yes">Rejouer</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="receives_default">True</property>
+                            <signal name="clicked" handler="onClick_Jouer" swapped="no"/>
+                          </object>
+                          <packing>
+                            <property name="expand">False</property>
+                            <property name="fill">False</property>
+                            <property name="position">1</property>
+                          </packing>
+                        </child>
+                      </object>
+                    </child>
+                  </object>
+                  <packing>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkVBox" id="boxTable">
+            <property name="no_show_all">True</property>
+            <child>
+              <object class="GtkAlignment" id="alignTableTop">
+                <property name="visible">True</property>
+                <property name="sensitive">False</property>
+                <property name="yalign">0.25</property>
+                <child>
+                  <object class="GtkHBox" id="hboxTableTop">
+                    <property name="visible">True</property>
+                    <property name="sensitive">False</property>
+                    <child>
+                      <object class="GtkAlignment" id="alignxTableTL1">
+                        <property name="height_request">100</property>
+                        <property name="visible">True</property>
+                        <property name="sensitive">False</property>
+                        <property name="xalign">0.20000000298023224</property>
+                        <property name="yalign">0.30000001192092896</property>
+                        <property name="xscale">0.20000000298023224</property>
+                        <property name="yscale">0.20000000298023224</property>
+                        <child>
+                          <object class="GtkLabel" id="labelCheck">
+                            <property name="visible">True</property>
+                            <property name="sensitive">False</property>
+                            <property name="label" translatable="yes">Bienvenue sur StarFamily 
+Poker, choisissez votre mise 
+puis cliquez sur "Miser".</property>
+                            <attributes>
+                              <attribute name="foreground" value="#ffffffffffff"/>
+                            </attributes>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkAlignment" id="alignTableTC">
+                        <property name="visible">True</property>
+                        <property name="sensitive">False</property>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkAlignment" id="alignTableTR1">
+                        <property name="visible">True</property>
+                        <property name="sensitive">False</property>
+                        <property name="xalign">0.30000001192092896</property>
+                        <property name="yalign">0.30000001192092896</property>
+                        <property name="xscale">0.20000000298023224</property>
+                        <property name="yscale">0.20000000298023224</property>
+                        <property name="left_padding">10</property>
+                        <child>
+                          <object class="GtkTable" id="tableStats">
+                            <property name="visible">True</property>
+                            <property name="sensitive">False</property>
+                            <property name="n_rows">2</property>
+                            <property name="n_columns">2</property>
+                            <property name="column_spacing">5</property>
+                            <property name="homogeneous">True</property>
+                            <child>
+                              <object class="GtkHBox" id="hboxStatsTL">
+                                <property name="visible">True</property>
+                                <property name="sensitive">False</property>
+                                <child>
+                                  <object class="GtkLabel" id="labStatsMise">
+                                    <property name="visible">True</property>
+                                    <property name="sensitive">False</property>
+                                    <property name="xalign">0</property>
+                                    <property name="label" translatable="yes">Mise :</property>
+                                    <attributes>
+                                      <attribute name="foreground" value="#ffffffffffff"/>
+                                    </attributes>
+                                  </object>
+                                  <packing>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="labStatsMiseV">
+                                    <property name="visible">True</property>
+                                    <property name="sensitive">False</property>
+                                    <property name="xalign">0</property>
+                                    <property name="label" translatable="yes">0</property>
+                                    <attributes>
+                                      <attribute name="foreground" value="#ffffffffffff"/>
+                                    </attributes>
+                                  </object>
+                                  <packing>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                              </object>
+                            </child>
+                            <child>
+                              <object class="GtkHBox" id="hboxStatsTR">
+                                <property name="visible">True</property>
+                                <property name="sensitive">False</property>
+                                <child>
+                                  <object class="GtkLabel" id="labStatsGains">
+                                    <property name="visible">True</property>
+                                    <property name="sensitive">False</property>
+                                    <property name="xalign">0</property>
+                                    <property name="label" translatable="yes">Gains :</property>
+                                    <attributes>
+                                      <attribute name="foreground" value="#ffffffffffff"/>
+                                    </attributes>
+                                  </object>
+                                  <packing>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="labStatsGainsV">
+                                    <property name="visible">True</property>
+                                    <property name="sensitive">False</property>
+                                    <property name="xalign">0</property>
+                                    <property name="label" translatable="yes">0</property>
+                                    <attributes>
+                                      <attribute name="foreground" value="#ffffffffffff"/>
+                                    </attributes>
+                                  </object>
+                                  <packing>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="left_attach">1</property>
+                                <property name="right_attach">2</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkHBox" id="hboxStatsBL">
+                                <property name="visible">True</property>
+                                <property name="sensitive">False</property>
+                                <child>
+                                  <object class="GtkLabel" id="labStatsTotal">
+                                    <property name="visible">True</property>
+                                    <property name="sensitive">False</property>
+                                    <property name="xalign">0</property>
+                                    <property name="label" translatable="yes">Total :</property>
+                                    <attributes>
+                                      <attribute name="foreground" value="#ffffffffffff"/>
+                                    </attributes>
+                                  </object>
+                                  <packing>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="labStatsTotalV">
+                                    <property name="visible">True</property>
+                                    <property name="sensitive">False</property>
+                                    <property name="xalign">0</property>
+                                    <property name="label" translatable="yes">0</property>
+                                    <attributes>
+                                      <attribute name="foreground" value="#ffffffffffff"/>
+                                    </attributes>
+                                  </object>
+                                  <packing>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="top_attach">1</property>
+                                <property name="bottom_attach">2</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkHBox" id="hboxStatsBR">
+                                <property name="visible">True</property>
+                                <property name="sensitive">False</property>
+                                <child>
+                                  <object class="GtkLabel" id="labStatsParties">
+                                    <property name="visible">True</property>
+                                    <property name="sensitive">False</property>
+                                    <property name="xalign">0</property>
+                                    <property name="label" translatable="yes">Parties :</property>
+                                    <attributes>
+                                      <attribute name="foreground" value="#ffffffffffff"/>
+                                    </attributes>
+                                  </object>
+                                  <packing>
+                                    <property name="position">0</property>
+                                  </packing>
+                                </child>
+                                <child>
+                                  <object class="GtkLabel" id="labStatsPartiesV">
+                                    <property name="visible">True</property>
+                                    <property name="sensitive">False</property>
+                                    <property name="xalign">0</property>
+                                    <property name="label" translatable="yes">0</property>
+                                    <attributes>
+                                      <attribute name="foreground" value="#ffffffffffff"/>
+                                    </attributes>
+                                  </object>
+                                  <packing>
+                                    <property name="position">1</property>
+                                  </packing>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="left_attach">1</property>
+                                <property name="right_attach">2</property>
+                                <property name="top_attach">1</property>
+                                <property name="bottom_attach">2</property>
+                              </packing>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkAlignment" id="alignTable">
+                <property name="visible">True</property>
+                <property name="resize_mode">immediate</property>
+                <property name="yalign">1</property>
+                <property name="top_padding">30</property>
+                <child>
+                  <object class="GtkHBox" id="hboxTable">
+                    <property name="visible">True</property>
+                    <property name="resize_mode">immediate</property>
+                    <child>
+                      <object class="GtkAlignment" id="alT_Left">
+                        <property name="visible">True</property>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkAlignment" id="alCartes">
+                        <property name="visible">True</property>
+                        <child>
+                          <object class="GtkHBox" id="hboxCartes">
+                            <property name="visible">True</property>
+                            <property name="spacing">20</property>
+                            <property name="homogeneous">True</property>
+                            <child>
+                              <object class="GtkEventBox" id="1">
+                                <property name="visible">True</property>
+                                <property name="double_buffered">False</property>
+                                <property name="visible_window">False</property>
+                                <signal name="button-press-event" handler="onClick_Carte1" swapped="no"/>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="position">0</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkEventBox" id="2">
+                                <property name="visible">True</property>
+                                <property name="double_buffered">False</property>
+                                <property name="visible_window">False</property>
+                                <signal name="button-press-event" handler="onClick_Carte2" swapped="no"/>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="position">1</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkEventBox" id="3">
+                                <property name="visible">True</property>
+                                <property name="double_buffered">False</property>
+                                <property name="visible_window">False</property>
+                                <signal name="button-press-event" handler="onClick_Carte3" swapped="no"/>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="position">2</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkEventBox" id="4">
+                                <property name="visible">True</property>
+                                <property name="double_buffered">False</property>
+                                <property name="visible_window">False</property>
+                                <signal name="button-press-event" handler="onClick_Carte4" swapped="no"/>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="position">3</property>
+                              </packing>
+                            </child>
+                            <child>
+                              <object class="GtkEventBox" id="5">
+                                <property name="visible">True</property>
+                                <property name="double_buffered">False</property>
+                                <property name="visible_window">False</property>
+                                <signal name="button-press-event" handler="onClick_Carte5" swapped="no"/>
+                                <child>
+                                  <placeholder/>
+                                </child>
+                              </object>
+                              <packing>
+                                <property name="position">4</property>
+                              </packing>
+                            </child>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="fill">False</property>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkAlignment" id="alT_Right">
+                        <property name="visible">True</property>
+                        <child>
+                          <placeholder/>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkAlignment" id="alignTableBScroll">
+                <property name="visible">True</property>
+                <property name="yalign">0.80000001192092896</property>
+                <property name="xscale">0.34999999403953552</property>
+                <property name="yscale">0.34999999403953552</property>
+                <child>
+                  <object class="GtkHScale" id="hscaleMise">
+                    <property name="visible">True</property>
+                    <property name="can_focus">True</property>
+                    <property name="adjustment">adjusteMise</property>
+                    <property name="digits">0</property>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="position">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkAlignment" id="alignTableBottom">
+                <property name="visible">True</property>
+                <property name="yalign">1</property>
+                <property name="bottom_padding">10</property>
+                <child>
+                  <object class="GtkHBox" id="hboxTableBottom">
+                    <property name="width_request">45</property>
+                    <property name="height_request">41</property>
+                    <property name="visible">True</property>
+                    <property name="homogeneous">True</property>
+                    <child>
+                      <object class="GtkAlignment" id="alignBTL">
+                        <property name="visible">True</property>
+                        <property name="xalign">0.10000000149011612</property>
+                        <property name="yalign">0.89999997615814209</property>
+                        <property name="xscale">0</property>
+                        <property name="yscale">0</property>
+                        <child>
+                          <object class="GtkButton" id="buttonMenu">
+                            <property name="label" translatable="yes">Menu</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="receives_default">True</property>
+                            <signal name="clicked" handler="on_buttonMenu_clicked" swapped="no"/>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="position">0</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkAlignment" id="alignBT">
+                        <property name="visible">True</property>
+                        <child>
+                          <object class="GtkButton" id="btnDistrib">
+                            <property name="label" translatable="yes">Miser</property>
+                            <property name="width_request">75</property>
+                            <property name="height_request">50</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="receives_default">True</property>
+                            <property name="double_buffered">False</property>
+                            <signal name="clicked" handler="on_btnDistrib_clicked" swapped="no"/>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="position">1</property>
+                      </packing>
+                    </child>
+                    <child>
+                      <object class="GtkAlignment" id="alignBTR">
+                        <property name="visible">True</property>
+                        <property name="xalign">0.89999997615814209</property>
+                        <property name="yalign">0.89999997615814209</property>
+                        <property name="xscale">0</property>
+                        <property name="yscale">0</property>
+                        <child>
+                          <object class="GtkButton" id="buttonAide">
+                            <property name="label" translatable="yes">Aide</property>
+                            <property name="visible">True</property>
+                            <property name="can_focus">True</property>
+                            <property name="receives_default">True</property>
+                            <signal name="clicked" handler="onClick_Aide" swapped="no"/>
+                          </object>
+                        </child>
+                      </object>
+                      <packing>
+                        <property name="position">2</property>
+                      </packing>
+                    </child>
+                  </object>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">3</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkAdjustment" id="adjusteMise">
+    <property name="upper">200</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+    <signal name="value-changed" handler="on_adjusteMise_value_changed" swapped="no"/>
+  </object>
+  <object class="GtkDialog" id="dialogPopMenu">
+    <property name="border_width">5</property>
+    <property name="type">popup</property>
+    <property name="window_position">center-on-parent</property>
+    <property name="type_hint">normal</property>
+    <property name="transient_for">window</property>
+    <property name="has_separator">False</property>
+    <child internal-child="vbox">
+      <object class="GtkVBox" id="dialog-vbox1">
+        <property name="visible">True</property>
+        <property name="spacing">2</property>
+        <child>
+          <object class="GtkLabel" id="label8">
+            <property name="visible">True</property>
+            <property name="label" translatable="yes">Voulez vous vraiment quitter ?</property>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child internal-child="action_area">
+          <object class="GtkHButtonBox" id="dialog-action_area1">
+            <property name="visible">True</property>
+            <property name="layout_style">center</property>
+            <child>
+              <object class="GtkButton" id="annuler">
+                <property name="label" translatable="yes">Annuler</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_annuler_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkButton" id="quitter">
+                <property name="label" translatable="yes">Quitter</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="destroy" handler="gtk_main_quit" swapped="no"/>
+                <signal name="clicked" handler="gtk_main_quit" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="pack_type">end</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="0">annuler</action-widget>
+      <action-widget response="0">quitter</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkDialog" id="dialogCredits">
+    <property name="border_width">5</property>
+    <property name="resizable">False</property>
+    <property name="window_position">center-on-parent</property>
+    <property name="type_hint">normal</property>
+    <property name="deletable">False</property>
+    <property name="transient_for">window</property>
+    <property name="has_separator">False</property>
+    <signal name="delete-event" handler="on_btnQuitCredit_clicked" swapped="no"/>
+    <child internal-child="vbox">
+      <object class="GtkVBox" id="dialog-vboxCredit">
+        <property name="visible">True</property>
+        <property name="spacing">2</property>
+        <child>
+          <object class="GtkVBox" id="vboxCredit">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkLabel" id="labelTitreCredit">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Video Poker v1.0</property>
+                <attributes>
+                  <attribute name="weight" value="bold"/>
+                  <attribute name="size" value="22800"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="labelCredit">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">BRAULT François
+DIEULEVEULT Etienne
+LAHAYE Vincent
+LARTIGUE Médérick
+
+Copyright 2010</property>
+                <property name="justify">center</property>
+                <attributes>
+                  <attribute name="foreground" value="#ffffffffffff"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+        <child internal-child="action_area">
+          <object class="GtkHButtonBox" id="dialog-action_area2">
+            <property name="visible">True</property>
+            <property name="layout_style">end</property>
+            <child>
+              <object class="GtkButton" id="btnQuitCredit">
+                <property name="label" translatable="yes">OK</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_btnQuitCredit_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="expand">False</property>
+            <property name="pack_type">end</property>
+            <property name="position">0</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+    <action-widgets>
+      <action-widget response="0">btnQuitCredit</action-widget>
+    </action-widgets>
+  </object>
+  <object class="GtkWindow" id="winAide">
+    <property name="resizable">False</property>
+    <property name="window_position">center-on-parent</property>
+    <property name="deletable">False</property>
+    <property name="transient_for">window</property>
+    <child>
+      <object class="GtkVBox" id="vboxAide">
+        <property name="visible">True</property>
+        <child>
+          <object class="GtkNotebook" id="notebookAide">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="homogeneous">True</property>
+            <child>
+              <object class="GtkLabel" id="labelAide">
+                <property name="visible">True</property>
+                <property name="xalign">0.10000000149011612</property>
+                <property name="yalign">0.079999998211860657</property>
+                <property name="label" translatable="yes">Règles du jeu de Vidéo Poker :
+
+Tout d'abord, misez. Vous décidez alors du montant de votre mise.
+
+Ensuite vous appuyez sur le bouton "Miser". 
+ 
+Séléctionnez les cartes que vous désirez changer.
+
+Puis vous appuyez sur "Cartes" pour les changer.
+ 
+Enfin, vous regardez à la fin du second tirage si votre main est une main gagnante.
+
+Valeur de gain des différentes combinaisons :
+
+		Paire :       			1x la mise 
+		Double Paire :   		2x la mise 
+		Brelan :    			3x la mise 
+		Quinte :     			4x la mise 
+		Flush :       			5x la mise 
+		Full :       				6x la mise 
+		Carré :       			9x la mise 
+		Quinte Flush :     		11x la mise 
+		Quinte Flush Royale :   	21x la mise
+</property>
+                <attributes>
+                  <attribute name="foreground" value="#ffffffffffff"/>
+                </attributes>
+              </object>
+            </child>
+            <child type="tab">
+              <object class="GtkLabel" id="labelNBAide">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Aide</property>
+              </object>
+              <packing>
+                <property name="tab_fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkLabel" id="labelRegles">
+                <property name="visible">True</property>
+                <property name="xalign">0.10000000149011612</property>
+                <property name="yalign">0.079999998211860657</property>
+                <property name="label" translatable="yes">Détail des Combinaisons :
+
+Une Paire :
+Cette combinaison est constituée 2 cartes de la même valeur, les cartes suivantes en cas 
+d’égalité joueront le rôle de kicker. Un Kicker est la plus haute carte qui n'entre dans aucune 
+combinaison de poker des joueurs.
+
+Double Paires :
+Cette combinaison est constituée de 2 fois 2 cartes de la même valeur. La paire la plus haute 
+indiquera la force de votre main, au cas ou votre adversaire possède aussi 2 paires. Si il y a 
+égalité sur les 2 paires donc que les joueurs ont chacun les 2 même paires, c’est le kicker qui fera 
+la différence pour départager les joueurs.
+
+Le Brelan :
+Cette combinaison est constituée de 3 cartes de même valeur.
+
+La Quinte ou Straight :
+Cette combinaison est constituée de 5 cartes qui se suivent.
+
+La Couleur ou Flush :
+Cette combinaison est constituée de 5 cartes de même couleur, ici pique. En cas de 2 couleurs la 
+différence se fera sur les cartes qui composent cette couleur, la plus forte étant l’As.
+
+Le Full House :
+Cette combinaison est constituée d’un brelan et d’une paire. Les Full House sont classés par la 
+valeur de leur brelan. Plus le brelan est élevé plus le Full House est fort.
+
+Le Carré :
+Cette combinaison est constituée de 4 cartes identiques.
+
+La Quinte Flush ou Straight Flush :
+Cette combinaison est constituée de 5 cartes de la même couleur (flush) qui forment une suite.
+
+La quinte Flush Royale :
+Cette combinaison est la plus forte au poker, constitué de 5 cartes de la même couleur (flush) 
+qui forment une suite à l’As.</property>
+                <attributes>
+                  <attribute name="foreground" value="#ffffffffffff"/>
+                </attributes>
+              </object>
+              <packing>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child type="tab">
+              <object class="GtkLabel" id="labelNBRegles">
+                <property name="visible">True</property>
+                <property name="label" translatable="yes">Règles</property>
+              </object>
+              <packing>
+                <property name="position">1</property>
+                <property name="tab_fill">False</property>
+              </packing>
+            </child>
+            <child>
+              <placeholder/>
+            </child>
+            <child type="tab">
+              <placeholder/>
+            </child>
+          </object>
+          <packing>
+            <property name="position">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkHButtonBox" id="hbuttonbox1">
+            <property name="visible">True</property>
+            <child>
+              <object class="GtkButton" id="btnAideClose">
+                <property name="label" translatable="yes">Fermer</property>
+                <property name="visible">True</property>
+                <property name="can_focus">True</property>
+                <property name="receives_default">True</property>
+                <signal name="clicked" handler="on_btnAideClose_clicked" swapped="no"/>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="position">0</property>
+              </packing>
+            </child>
+          </object>
+          <packing>
+            <property name="position">1</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+  <object class="GtkAdjustment" id="adjustScrollHAide">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+    <property name="page_size">10</property>
+  </object>
+  <object class="GtkAdjustment" id="adjustScrollVAide">
+    <property name="upper">100</property>
+    <property name="step_increment">1</property>
+    <property name="page_increment">10</property>
+    <property name="page_size">10</property>
+  </object>
+</interface>

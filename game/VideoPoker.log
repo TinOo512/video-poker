@@ -1,0 +1,119 @@
+﻿La génération a démarré 03/06/2010 23:24:34.
+     1>Projet "E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\VideoPoker.vcxproj" sur le nœud 2 (rebuild cible(s)).
+     1>_PrepareForClean:
+         Suppression du fichier "Debug\VideoPoker.lastbuildstate".
+       InitializeBuildStatus:
+         Création de "Debug\VideoPoker.unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\\GTK\include" /I"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\\GTK\include\atk-1.0" /I"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\\GTK\include\cairo" /I"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\\GTK\include\fontconfig" /I"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\\GTK\include\freetype2" /I"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\\GTK\include\gail-1.0" /I"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\\GTK\include\glib-2.0" /I"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\\GTK\include\gtk-2.0" /I"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\\GTK\include\libpng14" /I"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\\GTK\include\pango-1.0" /I"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\\GTK\lib\gtk-2.0\include" /I"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\\GTK\lib\glib-2.0\include" /ZI /nologo /W3 /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt carte.c function.c main.c msg.c signal.c
+         carte.c
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(29): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : voir la déclaration de 'strcpy'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(30): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(35): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : voir la déclaration de 'strcpy'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(36): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(37): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(40): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(148): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(152): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : voir la déclaration de 'strcpy'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(153): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(154): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(193): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : voir la déclaration de 'strcpy'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(194): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(195): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(289): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : voir la déclaration de 'strcpy'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(290): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(311): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : voir la déclaration de 'strcpy'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(312): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(316): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : voir la déclaration de 'strcpy'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(317): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(330): warning C4244: 'initialisation' : conversion de 'time_t' en 'int', perte possible de données
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(365): warning C4244: 'fonction' : conversion de 'time_t' en 'unsigned int', perte possible de données
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(416): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : voir la déclaration de 'strcpy'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(417): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(418): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\carte.c(436): warning C4047: 'initialisation' : les niveaux d'indirection de 'int' et de 'void *' sont différents
+         function.c
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\function.c(90): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : voir la déclaration de 'strcpy'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\function.c(91): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\function.c(103): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : voir la déclaration de 'strcpy'
+         main.c
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\main.c(63): warning C4047: 'initialisation' : les niveaux d'indirection de 'int' et de 'void *' sont différents
+         msg.c
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\msg.c(30): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C++ conformant name: _itoa. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdlib.h(867) : voir la déclaration de 'itoa'
+         signal.c
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\signal.c(49): warning C4047: 'initialisation' : les niveaux d'indirection de 'char' et de 'void *' sont différents
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\signal.c(79): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : voir la déclaration de 'sprintf'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\signal.c(185): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : voir la déclaration de 'strcpy'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\signal.c(186): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\signal.c(196): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : voir la déclaration de 'strcpy'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\signal.c(197): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\signal.c(198): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110) : voir la déclaration de 'strcat'
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\signal.c(222): warning C4047: 'initialisation' : les niveaux d'indirection de 'char' et de 'void *' sont différents
+     1>e:\utilisateurs\tinoo\documents\visual studio 2010\projects\videopoker\signal.c(243): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : voir la déclaration de 'sprintf'
+         Génération de code en cours...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\VideoPoker.exe.embed.manifest.res" Debug\VideoPoker_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\Debug\VideoPoker.exe" /INCREMENTAL /NOLOGO /LIBPATH:"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\\GTK\lib" "glib-2.0.lib" "pangocairo-1.0.lib" "pangowin32-1.0.lib" "atk-1.0.lib" "gdk_pixbuf-2.0.lib" "gdk-win32-2.0.lib" "pango-1.0.lib" "gmodule-2.0.lib" "gobject-2.0.lib" "gthread-2.0.lib" "gtk-win32-2.0.lib" cairo.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\VideoPoker.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\Debug\VideoPoker.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\Debug\VideoPoker.lib" Debug\VideoPoker.exe.embed.manifest.res
+         Debug\carte.obj
+         Debug\function.obj
+         Debug\main.obj
+         Debug\msg.obj
+         Debug\signal.obj
+     1>LINK : warning LNK4068: /MACHINE non spécifié ; X86 pris par défaut
+            Création de la bibliothèque E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\Debug\VideoPoker.lib et de l'objet E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\Debug\VideoPoker.exp
+       Manifest:
+         Suppression du fichier "Debug\VideoPoker.exe.embed.manifest".
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\VideoPoker.exe.embed.manifest" /manifest Debug\VideoPoker.exe.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\VideoPoker.exe.embed.manifest.res" Debug\VideoPoker_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\Debug\VideoPoker.exe" /INCREMENTAL /NOLOGO /LIBPATH:"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\\GTK\lib" "glib-2.0.lib" "pangocairo-1.0.lib" "pangowin32-1.0.lib" "atk-1.0.lib" "gdk_pixbuf-2.0.lib" "gdk-win32-2.0.lib" "pango-1.0.lib" "gmodule-2.0.lib" "gobject-2.0.lib" "gthread-2.0.lib" "gtk-win32-2.0.lib" cairo.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\VideoPoker.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\Debug\VideoPoker.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\Debug\VideoPoker.lib" Debug\VideoPoker.exe.embed.manifest.res
+         Debug\carte.obj
+         Debug\function.obj
+         Debug\main.obj
+         Debug\msg.obj
+         Debug\signal.obj
+     1>LINK : warning LNK4068: /MACHINE non spécifié ; X86 pris par défaut
+            Création de la bibliothèque E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\Debug\VideoPoker.lib et de l'objet E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\Debug\VideoPoker.exp
+         VideoPoker.vcxproj -> E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\Debug\VideoPoker.exe
+       FinalizeBuildStatus:
+         Suppression du fichier "Debug\VideoPoker.unsuccessfulbuild".
+         Mise à jour de l'horodatage "Debug\VideoPoker.lastbuildstate".
+     1>Génération du projet "E:\Utilisateurs\TinOo\Documents\Visual Studio 2010\Projects\VIDEOPOKER\VideoPoker.vcxproj" terminée (rebuild cible(s)).
+
+La génération a réussi.
+
+Temps écoulé 00:00:10.68
