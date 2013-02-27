@@ -1,6 +1,6 @@
 video-poker
 ===========
 
-Supinfo Project B1
+Projet de fin d'année Supinfo B1 (2010)
 
 ![screenshot](/screenshot.PNG)
